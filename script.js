@@ -20,8 +20,21 @@ function verificarAdivinhacao() {
     if (nomesFixos.includes(palpiteMinusculo)) {
       // Se estiver correto, exibe mensagem de sucesso
       document.getElementById('result').innerHTML = '😘 É exatamente em quem estou pensando agora. 😘 ';
-    } else {
-      // Se estiver incorreto, exibe mensagem de erro
-      document.getElementById('result').innerHTML = 'Ops! Tente novamente. O nome não é esse.';
-    }
+
+    // Cria um elemento de imagem e atribui a origem
+    var imagem = document.createElement('img');
+    imagem.src = './img/Captura de tela de 2023-12-19 16-34-47.png'; // Substitua pelo caminho da sua imagem
+    
+    var divImagem = document.createElement('div');
+    divImagem.appendChild(imagem);
+
+    // Adiciona a div com a imagem abaixo do resultado
+    document.getElementById('result').appendChild(divImagem);
+
+    // Adiciona a imagem ao resultado
+    document.getElementById('result').appendChild(imagem);
+  } else {
+    // Se estiver incorreto, exibe mensagem de erro
+    document.getElementById('result').innerHTML = 'Ops! Tente novamente. O nome não é esse.';
   }
+}
