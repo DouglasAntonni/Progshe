@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>She</title>
+  <style>
+    body {
+      background-image: url(./img/wallpapersden.com_cloudy-rocket-cool-art_1336x768.jpg);
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      color: #333;
+      
+    }
+    p{
+      color: #f0f0f0;
+    }
+    label{
+      color: #f0f0f0;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+    }
+
+    #result {
+      font-size: 20px;
+      margin-top: 20px;
+      color: #e7e6e6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sabe de quem eu estou falando?</h1>
+  <p>Estou pensando em uma pessoa. Tente adivinhar!</p>
+
+  
+
+  <!-- Formulário para adivinhar o nome -->
+  <label for="palpite">Seu palpite: </label>
+  <input type="text" id="palpite" placeholder="Digite seu palpite">
+  <button onclick="verificarAdivinhacao()">Verificar</button>
+
+  <!-- Local para exibir o resultado -->
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
